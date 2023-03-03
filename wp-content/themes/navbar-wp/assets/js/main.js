@@ -26,18 +26,17 @@ ButtonBesoin.forEach(button => {
     });
 
     button.addEventListener("mouseout", function() {
-        this.style.backgroundColor = "#f0f0f0";
+        this.style.backgroundColor = "";
         this.style.color = "black";
     });
 })
 
 
-
+const TextBesoin = document.querySelector(".text-vosbesoins")
+const TextBesoinTitle = document.querySelector(".text-vosbesoins p")
+const TextBesoinLink = document.querySelectorAll(".text-vosbesoins a")
 
 ButtonEnseigne.addEventListener("click", function() {
-    const TextBesoin = document.querySelector(".text-vosbesoins")
-    const TextBesoinTitle = document.querySelector(".text-vosbesoins p")
-    const TextBesoinLink = document.querySelectorAll(".text-vosbesoins a")
 
     if (TextBesoinTitle.innerText != "Quel est votre besoin ?") {
         TextBesoinTitle.innerText = "Quel est votre besoin ?";
@@ -54,13 +53,25 @@ ButtonEnseigne.addEventListener("click", function() {
         TextBesoinLink[3].innerText = "";
         TextBesoinLink[4].innerText = "";
     }
-    
-
 })
 
 
-console.log(TextBesoinTitle.innerHTML);
-console.log(TextBesoinLink[0].innerText);
+TextBesoinLink.forEach(a => {
+    a.addEventListener("mouseover", function() {
+        this.style.backgroundColor = "#ed6c6a";
+        this.style.color = "white";
+        this.style.transitionDuration = "0.2s";
+
+    });
+
+    a.addEventListener("mouseout", function() {
+        this.style.backgroundColor = "";
+        this.style.color = "black";
+    });
+})
+
+
+
 
 
 
