@@ -51,15 +51,7 @@
 <div class="modal-vosbesoins">
     <!-- Partie de gauche -->
     <div class="link-vosbesoins">
-        <!-- <ul>
-            <li id="li-1"><a href="">Enseigne</a></li>
-            <li id="li-2"><a href="">Industrie & Logistique</a></li>
-            <li id="li-3"><a href="">Collectivité</a></li>
-            <li id="li-4"><a href="">Centre commercial</a></li>
-            <li id="li-5"><a href="">Commerce indépendant</a></li>
-        </ul> -->
-
-        <button>Enseigne</button>
+        <button id="button-enseigne">Enseigne</button>
         <button>Industrie & Logistique</button>
         <button>Collectivité</button>
         <button>Centre commercial</button>
@@ -70,15 +62,22 @@
 
     <!-- Partie de droite -->
     <div class="text-vosbesoins">
-        <ul>
-            <li class="li-title">Quel est votre besoin ?</li>
+        <p class="text-title"></p>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </div>
+
+    <!-- <ul>
+            <li class=""></li>
             <li><a href="">Mesurer la fréquentation à l’entrée de vos sites</a></li>
             <li><a href="">Mesurer la fréquentation à l’intérieur de vos sites</a></li>
             <li><a href="">Optimiser vos taux de transformation</a></li>
             <li><a href="">Réduire vos vols</a></li>
             <li><a href="">Réduire les coûts de votre patrimoine foncier multisites</a></li>
-        </ul>
-    </div>
+        </ul> -->
         
 </div>
 

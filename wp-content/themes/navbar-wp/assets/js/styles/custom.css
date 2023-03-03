@@ -103,27 +103,29 @@ justify-content: center;
 /* PARTIE DROITE */
 
 .text-vosbesoins  {
+    display: none;
     width: 50%;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.text-vosbesoins ul {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
 }
 
 
+.text-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
 
-.text-vosbesoins ul li a {
+.text-vosbesoins a {
     text-decoration: none;
     color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
 }
 
-.li-title  {
-    font-weight: 600;
-    font-size: 17px;
-}
 
 
 
