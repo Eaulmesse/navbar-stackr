@@ -4,15 +4,15 @@ const ButtonEnseigne = document.querySelector('#button-enseigne')
 const ButtonIndustrie = document.querySelector('#button-industrie')
 
 const TextBesoin = document.querySelector(".text-vosbesoins")
-TextBesoin.style.display = "none"
 const TextBesoinTitle = document.querySelector(".text-vosbesoins p")
 const TextBesoinLink = document.querySelectorAll(".text-vosbesoins a")
-
+let ModalBesoin = document.querySelector(".modal-vosbesoins")
+ModalBesoin.style.display = "none"
 
 // Apparition de la modal de Besoin
 
 ButtonNavBesoin.addEventListener("click", function() {
-    let ModalBesoin = document.querySelector(".modal-vosbesoins")
+    
     if (ModalBesoin.style.display === "none") {
         ModalBesoin.style.display = "flex";
     }   
