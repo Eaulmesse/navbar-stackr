@@ -52,10 +52,10 @@
     <!-- Partie de gauche -->
     <div class="link-vosbesoins">
         <button id="button-enseigne">Enseigne</button>
-        <button>Industrie & Logistique</button>
-        <button>Collectivité</button>
-        <button>Centre commercial</button>
-        <button>Commerce indépendant</button>
+        <button id="button-industrie">Industrie & Logistique</button>
+        <button id="button-collectivite">Collectivité</button>
+        <button id="button-centrecommercial">Centre commercial</button>
+        <button id="button-independant">Commerce indépendant</button>
     </div>
 
     
