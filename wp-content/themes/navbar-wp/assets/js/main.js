@@ -25,7 +25,10 @@ ButtonNavBesoin.addEventListener("click", function() {
 
 
 
-ButtonBesoin.forEach(button => {
+let verifButton
+
+ButtonBesoin.forEach((button, index) => {
+
     button.addEventListener("click", function() {
         this.style.backgroundColor = "#ed6c6a";
         this.style.color = "white";
@@ -44,11 +47,23 @@ ButtonBesoin.forEach(button => {
     });
 
    
-    let isButtonActived = false
+
 
     button.addEventListener("click", function() {
-        
-        if (this == ButtonBesoin[0] && isButtonActived == false) {
+    
+        if (this == verifButton) {
+
+            TextBesoin.style.display = "none"
+            TextBesoinTitle.innerText = "";
+            TextBesoinLink[0].innerText = "";
+            TextBesoinLink[1].innerText = "";
+            TextBesoinLink[2].innerText = "";
+            TextBesoinLink[3].innerText = "";
+            TextBesoinLink[4].innerText = "";
+
+            verifButton = undefined
+        }
+        else if (this == ButtonBesoin[0]) {
             
 
             TextBesoin.style.display = "flex"
@@ -68,12 +83,11 @@ ButtonBesoin.forEach(button => {
             TextBesoinLink[4].innerText = "Réduire les coûts de votre patrimoine foncier multisites";
             TextBesoinLink[4].href = "http://navbarwp/wordpress/"
 
-            isButtonActived = true
+            verifButton = this
         } 
-        else if (this == ButtonBesoin[1] && isButtonActived != true) {
+        else if (this == ButtonBesoin[1]) {
 
 
-            console.log(2);
             TextBesoin.style.display = "flex";
             TextBesoinTitle.innerText = "Quel est votre besoin ?";
             TextBesoinLink[0].innerText = "Digitaliser l’accueil et augmenter la sécurité des accès";
@@ -91,9 +105,9 @@ ButtonBesoin.forEach(button => {
             TextBesoinLink[4].innerText = "";
             TextBesoinLink[4].href = "http://navbarwp/wordpress/"
 
-            isButtonActived = true
+            verifButton = this
         }   
-        else if (this == ButtonBesoin[2] && isButtonActived != true) {
+        else if (this == ButtonBesoin[2]) {
 
             TextBesoin.style.display = "flex";
             TextBesoinTitle.innerText = "Quel est votre besoin ?";
@@ -112,9 +126,9 @@ ButtonBesoin.forEach(button => {
             TextBesoinLink[4].innerText = "";
             TextBesoinLink[4].href = "http://navbarwp/wordpress/"
 
-            isButtonActived = true
+            verifButton = this
         }   
-        else if (this == ButtonBesoin[3] && isButtonActived != true) {
+        else if (this == ButtonBesoin[3]) {
 
             TextBesoin.style.display = "flex";
             TextBesoinTitle.innerText = "Quel est votre besoin ?";
@@ -133,9 +147,9 @@ ButtonBesoin.forEach(button => {
             TextBesoinLink[4].innerText = "";
             TextBesoinLink[4].href = "http://navbarwp/wordpress/"
 
-            isButtonActived = true
+            verifButton = this
         } 
-        else if (this == ButtonBesoin[4] && isButtonActived != true) {
+        else if (this == ButtonBesoin[4]) {
 
             TextBesoin.style.display = "flex";
             TextBesoinTitle.innerText = "Quel est votre besoin ?";
@@ -154,60 +168,11 @@ ButtonBesoin.forEach(button => {
             TextBesoinLink[4].innerText = "";
             TextBesoinLink[4].href = "http://navbarwp/wordpress/"
 
-            isButtonActived = true
+            verifButton = this
         }   
-        else if (isButtonActived = true) {
-            TextBesoin.style.display = "none"
-            TextBesoinTitle.innerText = "";
-            TextBesoinLink[0].innerText = "";
-            TextBesoinLink[1].innerText = "";
-            TextBesoinLink[2].innerText = "";
-            TextBesoinLink[3].innerText = "";
-            TextBesoinLink[4].innerText = "";
-
-            isButtonActived = false
-        }
-        
     })
 
 })
-
-
-
-
-
-
-
-
-
-
-
-// ButtonEnseigne.addEventListener("click", function() {
-
-//     if (TextBesoinTitle.innerText != "Quel est votre besoin ?") {
-//         TextBesoinTitle.innerText = "Quel est votre besoin ?";
-//         TextBesoinLink[0].innerText = "Mesurer la fréquentation à l’entrée de vos sites";
-//         TextBesoinLink[1].innerText = "Mesurer la fréquentation à l’intérieur de vos sites";
-//         TextBesoinLink[2].innerText = "Optimiser vos taux de transformation";
-//         TextBesoinLink[3].innerText = "Réduire vos vols";
-//         TextBesoinLink[4].innerText = "Réduire les coûts de votre patrimoine foncier multisites";
-//     } else {
-//         TextBesoinTitle.innerText = "";
-//         TextBesoinLink[0].innerText = "";
-//         TextBesoinLink[1].innerText = "";
-//         TextBesoinLink[2].innerText = "";
-//         TextBesoinLink[3].innerText = "";
-//         TextBesoinLink[4].innerText = "";
-//     }
-// })
-
-
-
-
-
-
-
-
 
 TextBesoinLink.forEach(a => {
     a.addEventListener("mouseover", function() {
@@ -222,10 +187,6 @@ TextBesoinLink.forEach(a => {
         this.style.color = "black";
     });
 })
-
-
-
-
 
 
 

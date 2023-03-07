@@ -42,6 +42,23 @@ body{
 
 }
 
+.link-nav button:hover > svg {
+    fill: #ed6c6a;
+    transition-duration: 0.2s;
+}
+
+.link-nav button:focus-within > svg {
+    fill: #ed6c6a;
+    transition-duration: 0.2s;
+}
+
+.navbar-svg {
+    width: 18x;
+    height: 18px;
+    margin-left: 5px;
+    transition-duration: 0.2s;
+}
+
 .link-nav ul {
     display: flex;
     justify-content: center;
@@ -60,6 +77,10 @@ body{
     text-decoration: none;
     color: black;
 }
+
+
+
+
 
 
 /* MODAL DE VOS BESOINS */
@@ -143,17 +164,34 @@ body{
 
 .card-solution {
     height: 250px;
-    width: 250px;
+    width: 15%;
+    padding: 15px;
+    border-radius: 15px;
+    transition-duration: 0.3s;
 }
 
-
-.card-solution:hover {
-    background-color: #a9a7b1;
-    fill: #023847;
+.card-solution p {
+    font-weight: bold;
+    font-size: 18px;
 }
+
+.card-solution:hover{
+    background-color: rgba(154,197,204,0.2);
+    transition-duration: 0.3s;
+}
+
+.card-solution:hover > svg {
+    fill: #025268;
+    transition-duration: 0.3s;
+}
+
 
 .card-solution ul {
     padding: 15px;
+}
+
+.card-solution li {
+    margin-top: 10px;
 }
 
 .card-solution a {
@@ -161,8 +199,10 @@ body{
     font-weight: bold;
 }
 
+
 .card-solution svg {
-    width: 64px;
-    height: 64px;
+    transition-duration: 0.3s;
+    width: 50px;
+    height: 50px;
     fill: #ed6c6a;
 }
